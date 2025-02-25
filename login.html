@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Sign In</title>
+    <style>
+     form{
+        border: solid 1px;
+            margin: 0 auto;
+            padding: 40px;
+            width: 30%;
+            display: block;
+            box-shadow: 5px 10px 8px 10px rgb(128, 128, 128)
+        }
+        input #password,email {
+            border: solid 1px;
+                margin:0 auto ;
+                padding: 10px ;
+                width: 90%;
+            
+            
+        }
+        #submit_button
+        {  margin: 0 auto;
+                border: solid 1px ;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                width: 100%;
+                padding: 5px;
+        }
+        #email {
+
+     border: solid 1px;
+     margin:0 auto;
+    }  
+     #password {
+        border: solid 1px;
+        margin:0 auto;
+        }
+        .hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;}
+    
+ #icons
+ { display: block flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    font-weight: 20px;
+    margin: auto;
+}
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="Don't have an account?Sign_up">Don't have an account? <a href="index.html">Sign Up</a></label>
+        <br>
+       <h1> <label for="sign_in"> Sign In</label></h1>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" spaceholder="Enter email">
+        <br>
+        <br>
+        <label for="password">Password: </label>
+        <br>
+        <input type="number" id="password" spaceholder="Enter password">
+        <br>
+        <br>
+        <br>
+        <input type="checkbox" >I've Read And Agree<a href="The Terms Of  Services">The Terms Of  Services</a> and Our <a href=Privacy_Policy>Privacy Policy</a>
+        <br>
+        <br>
+        <br>
+        <button type="submit" id="submit_button"><a href="Table.html" style="color: white;">Sign In</a></button>
+        <br>
+        <h2 class="hr-lines">Or Sign in with</h2>
+          <div id="icons"> 
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-facebook"></i>
+      </div>
+
+        
+        
+
+
+
+
+
+</form>
+    
+</body>
+</html>
