@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,116 +6,149 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Sign In</title>
     <style>
-     form{
-        border: solid 1px;
-            margin: 0 auto;
-            padding: 40px;
-            width: 30%;
+        body {
+            background: #f7f7f7;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        form {
+            background: #fff;
+            border-radius: 16px;
+            margin: 40px auto;
+            padding: 40px 32px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        label {
+            font-weight: 500;
+            margin-bottom: 6px;
             display: block;
-            box-shadow: 5px 10px 8px 10px rgb(128, 128, 128)
         }
-        input #password,email {
-            border: solid 1px;
-                margin:0 auto ;
-                padding: 10px ;
-                width: 90%;
-            
-            
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border 0.2s;
         }
-        #submit_button
-        {  margin: 0 auto;
-                border: solid 1px ;
-                background-color: black;
-                color: white;
-                cursor: pointer;
-                width: 100%;
-                padding: 5px;
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border: 1.5px solid #007bff;
+            outline: none;
         }
-        #email {
-
-     border: solid 1px;
-     margin:0 auto;
-    }  
-     #password {
-        border: solid 1px;
-        margin:0 auto;
+        #submit_button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #222;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
         }
-        .hr-lines{
-  position: relative;
-  max-width: 500px;
-  margin: 100px auto;
-  text-align: center;
-}
-
-.hr-lines:before{
-  content:" ";
-  height: 2px;
-  width: 130px;
-  background: black;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-
-.hr-lines:after{
-  content:" ";
-  height: 2px;
-  width: 130px;
-  background: black;
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0;}
-    
- #icons
- { display: block flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    font-weight: 20px;
-    margin: auto;
-}
-
+        #submit_button:hover {
+            background: #007bff;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+        .checkbox-label input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .checkbox-label a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 2px;
+        }
+        .checkbox-label a:hover {
+            text-decoration: underline;
+        }
+        .account-link {
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 0.98rem;
+        }
+        .account-link a {
+            color: #007bff;
+            text-decoration: none;
+            margin-left: 4px;
+        }
+        .account-link a:hover {
+            text-decoration: underline;
+        }
+        .hr-lines {
+            position: relative;
+            text-align: center;
+            margin: 32px 0 24px 0;
+        }
+        .hr-lines:before,
+        .hr-lines:after {
+            content: "";
+            height: 2px;
+            width: 40%;
+            background: #ccc;
+            position: absolute;
+            top: 50%;
+        }
+        .hr-lines:before {
+            left: 0;
+        }
+        .hr-lines:after {
+            right: 0;
+        }
+        #icons {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        #icons i {
+            cursor: pointer;
+            color: #555;
+            transition: color 0.2s;
+        }
+        #icons i:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
-    <form action="">
-        <label for="Don't have an account?Sign_up">Don't have an account? <a href="index.html">Sign Up</a></label>
-        <br>
-       <h1> <label for="sign_in"> Sign In</label></h1>
-        <br>
-        <label for="email">Email:</label>
-        <br>
-        <input type="email" id="email" spaceholder="Enter email">
-        <br>
-        <br>
-        <label for="password">Password: </label>
-        <br>
-        <input type="number" id="password" spaceholder="Enter password">
-        <br>
-        <br>
-        <br>
-        <input type="checkbox" >I've Read And Agree<a href="The Terms Of  Services">The Terms Of  Services</a> and Our <a href=Privacy_Policy>Privacy Policy</a>
-        <br>
-        <br>
-        <br>
-        <button type="submit" id="submit_button"><a href="Table.html" style="color: white;">Sign In</a></button>
-        <br>
-        <h2 class="hr-lines">Or Sign in with</h2>
-          <div id="icons"> 
+    <form>
+        <div class="account-link">
+            Don't have an account?
+            <a href="index.html">Sign Up</a>
+        </div>
+        <h1>Sign In</h1>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+        <div class="checkbox-label">
+            <input type="checkbox" required>
+            I've read and agree to the
+            <a href="The Terms Of  Services">Terms of Service</a>
+            and
+            <a href="Privacy_Policy">Privacy Policy</a>
+        </div>
+        <button type="submit" id="submit_button">Sign In</button>
+        <div class="hr-lines">or sign in with</div>
+        <div id="icons">
             <i class="fa-brands fa-google"></i>
             <i class="fa-brands fa-facebook"></i>
-      </div>
-
-        
-        
-
-
-
-
-
-</form>
-    
+        </div>
+    </form>
 </body>
 </html>

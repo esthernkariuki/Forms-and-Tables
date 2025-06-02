@@ -3,79 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Details Table</title>
     <style>
-        table, th, td {
-            border: 1px solid black; 
-         border-collapse: collapse;
-        border-collapse: collapse;
-        margin: auto;
-        border-style: blocked;
-        border-color: #d496cc;
-        width: 40%;
-        padding:10px;
-        border-spacing: 10px;}
-        tr:nth-child(even){
-            background-color:#d496cc;
-         }
-
-
-        
-    
-
-    
-#td { border: solid 1px;
-    border-collapse: collapse;
-    width: 40%;
-
-}
-#th {
-    border-collapse: collapse;
-    margin: auto;
-    width: 50%;
-}
-#login_details
-{
-    align-items: center;}
+        body {
+            background: #f7f7f7;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 48px auto;
+            padding: 24px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 28px;
+            color: #7c3a7e;
+            letter-spacing: 1px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background: #faf6fa;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(124,58,126,0.06);
+        }
+        th, td {
+            padding: 14px 12px;
+            text-align: left;
+        }
+        th {
+            background: #d496cc;
+            color: #222;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-bottom: 2px solid #b97bb7;
+        }
+        tr:nth-child(even) td {
+            background: #f3e3f7;
+        }
+        tr:nth-child(odd) td {
+            background: #fff;
+        }
+        tr:hover td {
+            background: #f7d6f7;
+            transition: background 0.2s;
+        }
+        td {
+            color: #333;
+            font-size: 1rem;
+            border-bottom: 1px solid #e5c6e5;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 8px;
+            }
+            table, th, td {
+                font-size: 0.95rem;
+            }
+            th, td {
+                padding: 8px 4px;
+            }
+        }
     </style>
 </head>
 <body>
-    <p for Login details id="login_details"><b>Login details</b></p>
-    <table >
-        <tr>
-            <th>First Name</th>
-               <th>Last Name</th>
+    <div class="container">
+        <h2>Login Details</h2>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
                 <th>Email address</th>
-        </tr>
-        <tr>
-            <td>Cynthia</td>
-            <td>Nakurel</td>
-            <td>cynthianakurel@gmail.com</td>          
-        </tr>
-        <tr>
-            <td>Ann</td>
-            <td>Njoki</td>
-            <td>annnjoki@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Blessing</td>
-            <td>Wangui</td>
-            <td>blessingwangui@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Jane</td>
-            <td>Njeri</td>
-            <td>janenjeri@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Beth</td>
-            <td>Nyambura</td>
-            <td>bethnyambura@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Mercy</td>
-            <td>Waruguru</td>
-            <td>mercywaruguru@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Cynthia</td>
+                <td>Nakurel</td>
+                <td>cynthianakurel@gmail.com</td>          
+            </tr>
+            <tr>
+                <td>Ann</td>
+                <td>Njoki</td>
+                <td>annnjoki@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Blessing</td>
+                <td>Wangui</td>
+                <td>blessingwangui@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Njeri</td>
+                <td>janenjeri@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Beth</td>
+                <td>Nyambura</td>
+                <td>bethnyambura@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mercy</td>
+                <td>Waruguru</td>
+                <td>mercywaruguru@gmail.com</td>
             </tr>
             <tr>
                 <td>Peterson</td>
@@ -95,11 +130,9 @@
             <tr>
                 <td>Joy</td>
                 <td>Kihio</td>
-                <td>joykihio@gmail.com
-                </td>
+                <td>joykihio@gmail.com</td>
             </tr>
-
-    </table>
-    
+        </table>
+    </div>
 </body>
 </html>
